@@ -1,0 +1,8 @@
+*.d
+*.obj
+TAGS
+*~
+*.DS_Store
+*-checkpoint.ipynb
+*.so
+*.pyc

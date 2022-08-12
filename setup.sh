@@ -1,22 +1,28 @@
 #!/usr/bin/env bash
 
 # Decima requires python 3.6
-if [! -d py3 ]
-do
-    virtualenv -p python3.6 py3
-done
+if [ ! -d py3 ]
+then
+    virtualenv -p python3.7 py3
+fi
 
 if [ -d py3 ]
-do
+then
     echo Successfully created virtual environment
-done
+fi
 
 source py3/bin/activate
 
-#pip3 install requirements.txt
+# reinstall pip
+curl -sS https://bootstrap.pypa.io/get-pip.py  -o get-pip.py
+python get-pip.py --force-reinstall
 
-git clone https://github.com/anwu1219/Marabou --depth=1
+pip3 install -r requirements.txt
+
+git clone https://github.com/anwu1219/Marabou
 cd Marabou
+git fetch origin vmware
+git checkout vmware
 mkdir build
 cd build
 cmake ../ -DENABLE_GUROBI=ON
