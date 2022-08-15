@@ -73,7 +73,7 @@ contains methods to define linear constraints on the node features of any
 nodes in the job profile, as well as on the decision variables of the scheduler.
 An example is provided in src/strategy-proofness-example.py
 
-# Repeating the results in the paper
+# Reproduce the results
 
 The 298 verification queries used in the paper,
 which are generated using the method described above, are contained
