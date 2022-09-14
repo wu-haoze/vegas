@@ -103,6 +103,12 @@ Additionally, to enable parallelization (processing N neurons in the same layer 
   --num-workers=N
 ```
 
+Additionally, to run abstract interpretation in isolation:
+```
+  --incomplete
+```
+
+
 To set a time limit of T seconds:
 ```
    --timeout 3600
@@ -143,4 +149,3 @@ on all the verification queries in the folder by running in the oopsla22 folder 
 
 This will create four folders corresponding to the configurations and each folder
 will contain the summary files of running the configuration on the benchmarks.
-
