@@ -12,7 +12,7 @@ For more information about the tool, please check out our paper: https://arxiv.o
 
 
 # Download
-The latest version of vegas is available on https://github.com/NeuralNetworkVerification/Marabou.
+The latest version of vegas is available on https://github.com/anwu1219/vegas
 
 # Setup and installation
 
