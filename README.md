@@ -39,7 +39,7 @@ pip install -r requirements.txt
 Next, the verification backend specific to GNN-schedulers are
 implemented on top of the Marabou framework for neural network verification:
 ```
-git clone https://github.com/anwu1219/Marabou
+git clone https://github.com/wu-haoze/Marabou
 cd Marabou
 git fetch origin vegas
 git checkout vegas
